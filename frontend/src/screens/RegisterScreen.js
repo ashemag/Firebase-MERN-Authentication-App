@@ -30,26 +30,7 @@ const RegisterScreen = ({ location, history }) => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo: loginUserInfo } = userLogin;
 
-  // const userConfirmEmail = useSelector((state) => state.userConfirmEmail);
-  // const {
-  //   requested: emailRequested,
-  //   confirmed: emailConfirmed,
-  // } = userConfirmEmail;
-
-  //const redirect = location.search ? location.search.split("=")[1] : "/";
-  // const _id = location.search ? location.search.split("=")[1] : null;
-  // console.log(_id);
-
   useEffect(() => {
-    // user clicked on email confirmation link
-    // if (_id) {
-    //   console.log("confirming email...");
-    //  // dispatch(confirmEmail(_id));
-    //   // history.push("/");
-    //   // user is registered and confirmed
-    // } else {
-    //   // history.push("/register");
-    // }
     if (loginUserInfo) {
       history.push("/");
     } else if (registerUserInfo) {
