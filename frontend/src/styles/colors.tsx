@@ -1,0 +1,12 @@
+export const black = "#000";
+export const white = "#FFFFFF";
+export const offWhite = `#F3F2F3`;
+export const green = "#95b084";
+export const lightGreen = "#e2f4d7";
+export const darkGreen = "#00300b";
+export const darkGray = "rgba(0, 0, 0, .5)";
+export const darkestGray = "rgba(0, 0, 0, .8)";
+export const gray = "rgba(160,160,160,.5)";
+export const lightGray = "rgba(160,160,160,.2)";
+export const footerColor = "#2d2e2f";
+export const purple = "#9C0B61";

@@ -1,0 +1,57 @@
+{
+  "name": "hearth_ii",
+  "version": "1.0.0",
+  "description": "Keep your relationships warm.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashemag/hearth_ii.git"
+  },
+  "author": "Ashe Magalhaes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashemag/hearth_ii/issues"
+  },
+  "homepage": "https://github.com/ashemag/hearth_ii#readme",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.2",
+    "axios": "^0.21.1",
+    "base64url": "^3.0.1",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-openid-connect": "^2.2.0",
+    "firebase": "^8.2.4",
+    "jsonwebtoken": "^8.5.1",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.11.13",
+    "nodemailer": "^6.4.17",
+    "react-hook-form": "^6.14.2",
+    "react-redux": "^7.2.2",
+    "react-router-bootstrap": "^0.25.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
+  }
+}
